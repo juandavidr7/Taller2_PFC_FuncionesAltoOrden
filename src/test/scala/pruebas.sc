@@ -58,13 +58,7 @@ derivada(div2)(3) // 20.04
 val DerPropDiv2 = DerivadaDiv(derPoli2, derPoli3)
 DerPropDiv2(3) // 20.04
 
-val div3 = (x: Double) => derLineal1(x) / derLineal3(x)
-derivada(div3)(1) // 2.3129646346357426E-17
-val DerPropDiv3 = DerivadaDiv(derLineal1, derLineal3)
-DerPropDiv3(1) // -2.014771462457751E-17
-
 val expFunction = (x: Double) => math.exp(x)
 derivada(expFunction)(1) // e
 val trigFunction = (x: Double) => math.sin(x)
 derivada(trigFunction)(math.Pi) // -1
-
